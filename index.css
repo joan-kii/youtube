@@ -98,3 +98,17 @@ body {
 .user-avatar-text {
   color: white;
 }
+
+main {
+  background-color: #f8f8f8;
+  padding: 2em 5em;
+}
+
+.video-frame {
+  position: relative;
+  margin-top: 3em;
+}
+
+.video-info {
+  width: 65em;
+}
