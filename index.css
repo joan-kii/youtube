@@ -14,6 +14,10 @@ button:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .topbar {
   position: fixed;
   top: 0;
@@ -23,10 +27,6 @@ button:focus {
   display:flex;
   align-items:center;
   background-color: white;
-}
-
-.topbar a {
-  text-decoration: none;
 }
 
 .hamburger {
@@ -47,7 +47,7 @@ button:focus {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
   letter-spacing: -1px;
-  margin-left: 0.1em;
+  margin-left: .1em;
 }
 
 .search-input {
@@ -60,7 +60,7 @@ button:focus {
 .search-input-field {
   width: 90%;
   height: 1.9em;
-  padding-left: 0.5em;
+  padding-left: .5em;
   font-size: 1rem;
   font-family: inherit;
   border: 1px solid grey;
@@ -84,7 +84,7 @@ button:focus {
 }
 
 .search-input-mic {
-  margin-top: 0.4em;
+  margin-top: .4em;
 }
 
 .side-buttons {
@@ -135,7 +135,7 @@ main {
 }
 
 .video-info p {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   font-size: 1.2rem;
 }
 
@@ -165,8 +165,8 @@ main {
 }
 
 .video-buttons span {
-  margin-left: 0.3em;
-  font-size: 0.9rem;
+  margin-left: .3em;
+  font-size: .9rem;
 }
 
 .channel-content {
@@ -186,7 +186,7 @@ main {
 .ninja {
   display: flex;
   align-items: center;
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 .ninja p {
@@ -201,15 +201,15 @@ main {
 
 .suscribers {
   color: gray;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .subscribe-btn {
   height: 2.5em;
-  padding: 0 0.7em;
+  padding: 0 .7em;
   border-radius: 2px;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: .9em;
   color: white;
   background-color: #c00;
 }
@@ -217,5 +217,107 @@ main {
 .video-description {
   margin-left: 4em;
   width: 50%;
-  font-size: 0.9rem;
+  font-size: .9rem;
+}
+
+.comments-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-comments {
+  width: 18em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-comments button {
+  display: flex;
+  align-items: center;
+}
+
+.order-comments svg {
+  margin-right: .5em;
+}
+
+.comment-form {
+  margin-bottom: 2em;
+  display: flex;
+  color: gray;
+}
+
+.user-avatar-large {
+  margin-right: .6em;
+  width: 2.4em;
+  height: 2.4em;
+}
+
+.comment-field {
+  width: 100%;
+  margin-top: 0;
+  font-size: .9rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.comment {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+}
+
+.avatar-image {
+  margin-right: .6em;
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+} 
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+}
+
+.user-name {
+  width: fit-content;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comment-date {
+  margin-left: .5em;
+  font-weight: normal;
+}
+
+.comment-text {
+  margin-top: .5em;
+}
+
+.comment-feedback {
+  display: flex;
+  align-items: center;
+}
+
+.likes-counter {
+  margin-left: .6em;
+  margin-right: 1em;
+  color: gray;
+  font-size: .8rem;
+}
+
+.reply-btn {
+  margin-left: 1.2em;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.replys {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #065fd4;
+}
+
+.replys p {
+  margin-left: .8em;
 }
