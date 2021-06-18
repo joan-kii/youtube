@@ -77,6 +77,7 @@ button:focus {
   margin-right: 1.2em;
   height: 2.2em;
   width: 4.5em;
+  background-color: #f8f8f8;
   border: 1px solid grey;
   border-radius: 0;
   cursor: pointer;
@@ -180,4 +181,41 @@ main {
 .top-channel-content {
   display: flex;
   justify-content: space-between;
+}
+
+.ninja {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.ninja p {
+  margin: 0;
+}
+
+.ninja-title {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.suscribers {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.subscribe-btn {
+  height: 2.5em;
+  padding: 0 0.7em;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: white;
+  background-color: #c00;
+}
+
+.video-description {
+  margin-left: 4em;
+  width: 50%;
+  font-size: 0.9rem;
 }
