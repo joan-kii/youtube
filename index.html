@@ -1,532 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-  <title>Full React Tutorial #1 - Introduction</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Full React Tutorial #1 - Introduction</title>
+  </head>
+  <body>
 
-  <!-- Topbar -->
-  <header class="topbar">
-    <a class="hamburger" href="/#">
-      <svg viewBox="0 0 100 80" width="30" height="30">
-        <rect width="58" height="5" rx="5"></rect>
-        <rect y="16" width="58" height="5" rx="5"></rect>
-        <rect y="32" width="58" height="5" rx="5"></rect>
-      </svg>
-    </a>
-    <div class="logo">
-      <a class="icon" href="/#" title="Página de inicio de Youtube">
-        <img src="assets/youtube-icon.svg" height="30" width="30">
-      </a>
-      <a class="logo" href="/#">
-        <span class="text-logo">YouTube</span><sup> ES</sup>
-      </a>
-    </div>
-    <div class="search-input">
-      <input class="search-input-field" type="search" placeholder="Buscar">
-      <button class="search-input-button" title="Buscar">
-        <svg width="12" height="12" fill="grey" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg>
-      </button>
-      <a class="search-input-mic" href="/#">
-        <svg  width="18" height="18" fill="grey" viewBox="0 0 16 16">
-          <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-          <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+    <!-- Topbar -->
+    <header class="topbar">
+      <a class="hamburger" href="/#">
+        <svg viewBox="0 0 100 80" width="30" height="30">
+          <rect width="58" height="5" rx="5"></rect>
+          <rect y="16" width="58" height="5" rx="5"></rect>
+          <rect y="32" width="58" height="5" rx="5"></rect>
         </svg>
       </a>
-    </div>
-    <div class="side-buttons">
-      <a href="/#">
-        <img src="assets/video-plus.svg" height="25" width="25">
-      </a>
-      <a href="/#">
-        <img src="assets/dots-grid.svg" height="25" width="25">
-      </a>
-      <a href="/#">
-        <img src="assets/bell.svg" height="25" width="25">
-      </a>
-      <div class="user-avatar">
-        <a class="user-avatar-text" href="/#">T</a>
+      <div class="logo">
+        <a class="icon" href="/#" title="Página de inicio de Youtube">
+          <img src="assets/youtube-icon.svg" height="30" width="30">
+        </a>
+        <a class="logo" href="/#">
+          <span class="text-logo">YouTube</span><sup> ES</sup>
+        </a>
       </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Left Side-->
-    <div class="left-column">
-
-      <!-- Video Youtube -->
-
-      <section>
-        <iframe class="video-frame" src="https://www.youtube.com/embed/j942wKiXFu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-      <section class="video-info">
-        <p>Full React Tutorial #1 - Introduction</p>
-        <div class="video-data">
-          <p>169.427 visualizaciones • 21 dic 2020</p>
-          <div class="video-buttons">
-            <button title="Me gusta este vídeo">
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-              </svg>
-              <span>5245</span>
-            </button>
-            <button title="No me gusta este vídeo">
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-              </svg>
-              <span>8</span>
-            </button>
-            <button>
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" />
-              </svg>
-              <span>COMPARTIR</span>
-            </button>
-            <button>
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M2,16H10V14H2M18,14V10H16V14H12V16H16V20H18V16H22V14M14,6H2V8H14M14,10H2V12H14V10Z" />
-              </svg>
-              <span>AÑADIR</span>
-            </button>
-            <button>
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Channel Info -->
-      <section class="channel-content">
-        <div class="top-channel-content">
-          <div class="ninja">
-            <img src="https://yt3.ggpht.com/ytc/AAUvwni-Wm0ZBDYJYFwySP2esxgc8s9mKiwmI3yJrmjlHQ=s48-c-k-c0x00ffffff-no-rj">
-            <div class="ninja-title">
-              <p>The Net Ninja
-                <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-                </svg>
-              </p>
-              <p class="suscribers">728.000 suscriptores</p>
-            </div>
-          </div>
-          <button 
-            class="subscribe-btn" 
-            onclick="window.open('https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg', '_blank');" 
-            type="button">SUSCRIBIRME</button>
-        </div>
-        <div class="video-description">
-          <p>Hey gang, in this complete modern React tutorial we'll learn about React from the ground up - setup, JSX templates, components & events. We'll cover state & the use of hooks, the React Router & also how to handle asynchronous code in components.</p>
-          <button>MOSTRAR MÁS</button>
-        </div>
-      </section>
-
-      <!-- Comments -->
-
-      <section>
-        <div class="comments-header">
-          <div class="order-comments">
-            <p>378 comentarios</p>
-            <button>
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z" />
-              </svg>ORDENAR POR</button>
-          </div>
-          <div class="comment-form">
-            <div class="user-avatar user-avatar-large">
-              <a class="user-avatar-text" href="/#">T</a>
-            </div>
-            <p class="comment-field">Añade un comentario público...</p>
-          </div>
-        </div>
-        <div class="comment">
-          <a href="/#">
-            <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnhSGoPsJfWqhE7BOiXJILN2Fv1-GYK-h-1mRxrlzA=s48-c-k-c0x00ffffff-no-rj">
-          </a>
-          <div class="comment-content">
-            <a class="user-name">Luís Galete<span class="comment-date">hace 5 meses</span></a>
-            <p class="comment-text">I've always seen comments like "Just what I needed", but never thought it would happen to me. Now I believe it, Shaun is a real ninja!</p>
-            <div class="comment-feedback">
-              <a href="/#" title="Me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-                </svg>
-              </a>
-              <span class="likes-counter">230</span>
-              <a href="/#" title="No me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-                </svg>
-              </a>
-              <button class="reply-btn">RESPONDER</button>
-            </div>
-            <div class="replys">
-              <svg style="width:18px;height:18px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
-              </svg>
-              <p>Ver 4 respuestas</p>
-            </div>
-          </div>
-        </div>
-        <div class="comment">
-          <a href="/#">
-            <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnjRFzZ_37barNojsc_HtHcj4fQqPErs3I2v7w=s48-c-k-c0x00ffffff-no-rj">
-          </a>
-          <div class="comment-content">
-            <a class="user-name">Brother Caleb<span class="comment-date">hace 5 meses</span></a>
-            <p class="comment-text">I literally was going through the previous react tutorial last week and this series is here ... perfect 🤩</p>
-            <div class="comment-feedback">
-              <a href="/#" title="Me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-                </svg>
-              </a>
-              <span class="likes-counter">3</span>
-              <a href="/#" title="No me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-                </svg>
-              </a>
-              <button class="reply-btn">RESPONDER</button>
-            </div>
-          </div>
-        </div>
-        <div class="comment">
-          <a href="/#">
-            <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwni6b6jIPLqnRurV9mjBywO2EHQoXPd-fP3mWJrklQ=s48-c-k-c0x00ffffff-no-rj">
-          </a>
-          <div class="comment-content">
-            <a class="user-name">Aria Goswami<span class="comment-date">hace 5 meses</span></a>
-            <p class="comment-text">I learned Vue from your tutorial last year, then I'm catching up with the Vue3 tutorial of yours currently, and now when I am seeing a brand new React tutorial, I'm nothing but all smiles and full of admiration for you!</p>
-            <div class="comment-feedback">
-              <a href="/#" title="Me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-                </svg>
-              </a>
-              <span class="likes-counter">1</span>
-              <a href="/#" title="No me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-                </svg>
-              </a>
-              <button class="reply-btn">RESPONDER</button>
-            </div>
-          </div>
-        </div>
-        <div class="comment">
-          <a href="/#">
-            <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnhu44jfhcc_CSXGWu4g4FiSbnAg2qNgSZbwrW3o=s48-c-k-c0x00ffffff-no-rj">
-          </a>
-          <div class="comment-content">
-            <a class="user-name">Wahab Shaikh<span class="comment-date">hace 5 meses</span></a>
-            <p class="comment-text">I started learning React with your older tutorial a few months ago, and I’m sure I couldn’t have grasped so much about the technology had I started elsewhere! Love your teaching style ♥️</p>
-            <div class="comment-feedback">
-              <a href="/#" title="Me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-                </svg>
-              </a>
-              <span class="likes-counter"></span>
-              <a href="/#" title="No me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-                </svg>
-              </a>
-              <button class="reply-btn">RESPONDER</button>
-            </div>
-            <div class="replys">
-              <svg style="width:18px;height:18px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
-              </svg>
-              <p>Ver respuesta de The Net Ninja</p>
-            </div>
-          </div>
-        </div>
-        <div class="comment">
-          <a href="/#">
-            <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwniT-r9M7etm99RqQAUs5kstUK6ajrMzrnLRoj_LWA=s48-c-k-c0x00ffffff-no-rj">
-          </a>
-          <div class="comment-content">
-            <a class="user-name">Sourahb Mahato<span class="comment-date">hace 5 meses</span></a>
-            <p class="comment-text">Thanks for saving my ass. I just needed a modern react playlist. You're a gem to the community. 💖</p>
-            <div class="comment-feedback">
-              <a href="/#" title="Me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
-                </svg>
-              </a>
-              <span class="likes-counter">51</span>
-              <a href="/#" title="No me gusta">
-                <svg style="width:17px;height:17px" viewBox="0 0 24 24">
-                  <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
-                </svg>
-              </a>
-              <button class="reply-btn">RESPONDER</button>
-            </div>
-            <div class="replys">
-              <svg style="width:18px;height:18px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
-              </svg>
-              <p>Ver 3 respuestas de The Net Ninja y otros usuarios</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Right Side -->
-
-    <section class="video-suggestions">
-      <div class="related-buttons">
-        <button class="rel-btn all-btn">Todos</button>
-        <button class="rel-btn">React</button>
-        <button class="rel-btn">JavaScript</button>
-        <button class="rel-btn">Relacionados</button>
-        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-          <path fill="gray" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-        </svg>
+      <div class="search-input">
+        <input class="search-input-field" type="search" placeholder="Buscar">
+        <button class="search-input-button" title="Buscar">
+          <svg width="12" height="12" fill="grey" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        <a class="search-input-mic" href="/#">
+          <svg  width="18" height="18" fill="grey" viewBox="0 0 16 16">
+            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+        </a>
       </div>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=kVeOpcw4GWY&t=3s" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/kVeOpcw4GWY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBW9FvYdCo7JRD-i3WKA0jIEr_mWQ">
-          <span class="video-duration">13:02</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+      <div class="side-buttons">
+        <a href="/#">
+          <img src="assets/video-plus.svg" height="25" width="25">
+        </a>
+        <a href="/#">
+          <img src="assets/dots-grid.svg" height="25" width="25">
+        </a>
+        <a href="/#">
+          <img src="assets/bell.svg" height="25" width="25">
+        </a>
+        <div class="user-avatar">
+          <a class="user-avatar-text" href="/#">T</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left Side-->
+      <div class="left-column">
+
+        <!-- Video Youtube -->
+
+        <section class="player">
+          <iframe class="video-frame" src="https://www.youtube.com/embed/j942wKiXFu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="video-info">
+          <p>Full React Tutorial #1 - Introduction</p>
+          <div class="video-data">
+            <p>169.427 visualizaciones • 21 dic 2020</p>
+            <div class="video-buttons">
+              <button title="Me gusta este vídeo">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                </svg>
+                <span>5245</span>
+              </button>
+              <button title="No me gusta este vídeo">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                </svg>
+                <span>8</span>
+              </button>
+              <button>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" />
+                </svg>
+                <span>COMPARTIR</span>
+              </button>
+              <button>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M2,16H10V14H2M18,14V10H16V14H12V16H16V20H18V16H22V14M14,6H2V8H14M14,10H2V12H14V10Z" />
+                </svg>
+                <span>AÑADIR</span>
+              </button>
+              <button>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #2 - Creating a React Application</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>88.756 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=9D1x7-2FmTA" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/9D1x7-2FmTA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDmGJCU6PVnVPPxDGiU79-qir82sA">
-          <span class="video-duration">06:37</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+        </section>
+
+        <!-- Channel Info -->
+        <section class="channel-content">
+          <div class="top-channel-content">
+            <div class="ninja">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwni-Wm0ZBDYJYFwySP2esxgc8s9mKiwmI3yJrmjlHQ=s48-c-k-c0x00ffffff-no-rj">
+              <div class="ninja-title">
+                <p>The Net Ninja
+                  <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                  </svg>
+                </p>
+                <p class="suscribers">728.000 suscriptores</p>
+              </div>
+            </div>
+            <button 
+              class="subscribe-btn" 
+              onclick="window.open('https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg', '_blank');" 
+              type="button">SUSCRIBIRME</button>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #3 - Components & Templates</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>69.932 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=pnhO8UaCgxg" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/pnhO8UaCgxg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAcGlaKId93gr1xw1GxZE4EHYweEg">
-          <span class="video-duration">05:32</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="video-description">
+            <p>Hey gang, in this complete modern React tutorial we'll learn about React from the ground up - setup, JSX templates, components & events. We'll cover state & the use of hooks, the React Router & also how to handle asynchronous code in components.</p>
+            <button>MOSTRAR MÁS</button>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #4 - Dynamic Values in Templates</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>51.048 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=0sSYmRImgRY&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=5" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/0sSYmRImgRY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB86sXL8v-AGoSy8mAWI0d5zjd2ww">
-          <span class="video-duration">06:09</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+        </section>
+
+        <!-- Comments -->
+
+        <section>
+          <div class="comments-header">
+            <div class="order-comments">
+              <p>378 comentarios</p>
+              <button>
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z" />
+                </svg>ORDENAR POR</button>
+            </div>
+            <div class="comment-form">
+              <div class="user-avatar user-avatar-large">
+                <a class="user-avatar-text" href="/#">T</a>
+              </div>
+              <p class="comment-field">Añade un comentario público...</p>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #5 - Multiple Components</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>52.7542 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=NbTrGcz4DW8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=6" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/NbTrGcz4DW8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA6jFRJ7FjOqqX5WYNjAOxG3bMS6g">
-          <span class="video-duration">06:40</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="comment">
+            <a href="/#">
+              <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnhSGoPsJfWqhE7BOiXJILN2Fv1-GYK-h-1mRxrlzA=s48-c-k-c0x00ffffff-no-rj">
+            </a>
+            <div class="comment-content">
+              <a class="user-name">Luís Galete<span class="comment-date">hace 5 meses</span></a>
+              <p class="comment-text">I've always seen comments like "Just what I needed", but never thought it would happen to me. Now I believe it, Shaun is a real ninja!</p>
+              <div class="comment-feedback">
+                <a href="/#" title="Me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                  </svg>
+                </a>
+                <span class="likes-counter">230</span>
+                <a href="/#" title="No me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                  </svg>
+                </a>
+                <button class="reply-btn">RESPONDER</button>
+              </div>
+              <div class="replys">
+                <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                </svg>
+                <p>Ver 4 respuestas</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #6 - Adding Styles</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>45.130 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=0XSDAup85SA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=7" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/0XSDAup85SA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDGQm6_znw1VkwXFzfMqrWTIxEMWg">
-          <span class="video-duration">07:21</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="comment">
+            <a href="/#">
+              <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnjRFzZ_37barNojsc_HtHcj4fQqPErs3I2v7w=s48-c-k-c0x00ffffff-no-rj">
+            </a>
+            <div class="comment-content">
+              <a class="user-name">Brother Caleb<span class="comment-date">hace 5 meses</span></a>
+              <p class="comment-text">I literally was going through the previous react tutorial last week and this series is here ... perfect 🤩</p>
+              <div class="comment-feedback">
+                <a href="/#" title="Me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                  </svg>
+                </a>
+                <span class="likes-counter">3</span>
+                <a href="/#" title="No me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                  </svg>
+                </a>
+                <button class="reply-btn">RESPONDER</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #7 - Click Events</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>45.899 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=4pO-HcG2igk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=8" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/4pO-HcG2igk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDsoDsOjOnAoiTQ0ewTOsKbGVI7Eg">
-          <span class="video-duration">06:42</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="comment">
+            <a href="/#">
+              <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwni6b6jIPLqnRurV9mjBywO2EHQoXPd-fP3mWJrklQ=s48-c-k-c0x00ffffff-no-rj">
+            </a>
+            <div class="comment-content">
+              <a class="user-name">Aria Goswami<span class="comment-date">hace 5 meses</span></a>
+              <p class="comment-text">I learned Vue from your tutorial last year, then I'm catching up with the Vue3 tutorial of yours currently, and now when I am seeing a brand new React tutorial, I'm nothing but all smiles and full of admiration for you!</p>
+              <div class="comment-feedback">
+                <a href="/#" title="Me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                  </svg>
+                </a>
+                <span class="likes-counter">1</span>
+                <a href="/#" title="No me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                  </svg>
+                </a>
+                <button class="reply-btn">RESPONDER</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #8 - Using State (useState hook)</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>48.269 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=rb1GWqCJid4&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=9" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/rb1GWqCJid4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBTcRw91uChbc7oIUkr65Oo0IyPOw">
-          <span class="video-duration">04:20</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="comment">
+            <a href="/#">
+              <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwnhu44jfhcc_CSXGWu4g4FiSbnAg2qNgSZbwrW3o=s48-c-k-c0x00ffffff-no-rj">
+            </a>
+            <div class="comment-content">
+              <a class="user-name">Wahab Shaikh<span class="comment-date">hace 5 meses</span></a>
+              <p class="comment-text">I started learning React with your older tutorial a few months ago, and I’m sure I couldn’t have grasped so much about the technology had I started elsewhere! Love your teaching style ♥️</p>
+              <div class="comment-feedback">
+                <a href="/#" title="Me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                  </svg>
+                </a>
+                <span class="likes-counter"></span>
+                <a href="/#" title="No me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                  </svg>
+                </a>
+                <button class="reply-btn">RESPONDER</button>
+              </div>
+              <div class="replys">
+                <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                </svg>
+                <p>Ver respuesta de The Net Ninja</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #9 - Intro to React Dev Tools</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>35.092 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=tHjxSVaj_wY&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=10" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/tHjxSVaj_wY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0MqaqJcqvkVHbNNP1TS02h05h_A">
-          <span class="video-duration">06:44</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+          <div class="comment">
+            <a href="/#">
+              <img class="avatar-image" src="https://yt3.ggpht.com/ytc/AAUvwniT-r9M7etm99RqQAUs5kstUK6ajrMzrnLRoj_LWA=s48-c-k-c0x00ffffff-no-rj">
+            </a>
+            <div class="comment-content">
+              <a class="user-name">Sourahb Mahato<span class="comment-date">hace 5 meses</span></a>
+              <p class="comment-text">Thanks for saving my ass. I just needed a modern react playlist. You're a gem to the community. 💖</p>
+              <div class="comment-feedback">
+                <a href="/#" title="Me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z" />
+                  </svg>
+                </a>
+                <span class="likes-counter">51</span>
+                <a href="/#" title="No me gusta">
+                  <svg style="width:17px;height:17px" viewBox="0 0 24 24">
+                    <path fill="gray" d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z" />
+                  </svg>
+                </a>
+                <button class="reply-btn">RESPONDER</button>
+              </div>
+              <div class="replys">
+                <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                </svg>
+                <p>Ver 3 respuestas de The Net Ninja y otros usuarios</p>
+              </div>
+            </div>
           </div>
+        </section>
+      </div>
+
+      <!-- Right Side -->
+
+      <section class="video-suggestions">
+        <div class="related-buttons">
+          <button class="rel-btn all-btn">Todos</button>
+          <button class="rel-btn">React</button>
+          <button class="rel-btn">JavaScript</button>
+          <button class="rel-btn">Relacionados</button>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="gray" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #10 - Outputting Lists</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>42.622 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-      <a class="video-suggested" href="https://www.youtube.com/watch?v=PHaECbrKgs0&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=11" target="_blank">
-        <div class="thumbnail">
-          <img src="https://i.ytimg.com/vi/PHaECbrKgs0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB7J7zfez-B0S2jojRYOc6g5XUc-A">
-          <span class="video-duration">08:56</span>
-          <div class="thumbnail-overlay">
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
-            </svg>
-            <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
-            </svg>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=kVeOpcw4GWY&t=3s" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/kVeOpcw4GWY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBW9FvYdCo7JRD-i3WKA0jIEr_mWQ">
+            <span class="video-duration">13:02</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="video-suggested-info">
-          <h3>Full React Tutorial #11 - Props</h3>
-          <p>The Net Ninja
-            <svg style="width:15px;height:15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-            </svg></p>
-          <p>43.160 visualizaciones</p>
-          <p>hace 5 meses</p>
-        </div>
-      </a>
-    </section>
-  </main>
-</body>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #2 - Creating a React Application</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>88.756 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=9D1x7-2FmTA" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/9D1x7-2FmTA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDmGJCU6PVnVPPxDGiU79-qir82sA">
+            <span class="video-duration">06:37</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #3 - Components & Templates</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>69.932 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=pnhO8UaCgxg" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/pnhO8UaCgxg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAcGlaKId93gr1xw1GxZE4EHYweEg">
+            <span class="video-duration">05:32</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #4 - Dynamic Values in Templates</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>51.048 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=0sSYmRImgRY&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=5" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/0sSYmRImgRY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB86sXL8v-AGoSy8mAWI0d5zjd2ww">
+            <span class="video-duration">06:09</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #5 - Multiple Components</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>52.7542 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=NbTrGcz4DW8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=6" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/NbTrGcz4DW8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA6jFRJ7FjOqqX5WYNjAOxG3bMS6g">
+            <span class="video-duration">06:40</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #6 - Adding Styles</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>45.130 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=0XSDAup85SA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=7" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/0XSDAup85SA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDGQm6_znw1VkwXFzfMqrWTIxEMWg">
+            <span class="video-duration">07:21</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #7 - Click Events</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>45.899 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=4pO-HcG2igk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=8" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/4pO-HcG2igk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDsoDsOjOnAoiTQ0ewTOsKbGVI7Eg">
+            <span class="video-duration">06:42</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #8 - Using State (useState hook)</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>48.269 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=rb1GWqCJid4&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=9" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/rb1GWqCJid4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBTcRw91uChbc7oIUkr65Oo0IyPOw">
+            <span class="video-duration">04:20</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #9 - Intro to React Dev Tools</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>35.092 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=tHjxSVaj_wY&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=10" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/tHjxSVaj_wY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0MqaqJcqvkVHbNNP1TS02h05h_A">
+            <span class="video-duration">06:44</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #10 - Outputting Lists</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>42.622 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+        <a class="video-suggested" href="https://www.youtube.com/watch?v=PHaECbrKgs0&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=11" target="_blank">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/PHaECbrKgs0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB7J7zfez-B0S2jojRYOc6g5XUc-A">
+            <span class="video-duration">08:56</span>
+            <div class="thumbnail-overlay">
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+              </svg>
+              <svg class="thumbnail-overlay-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-suggested-info">
+            <h3>Full React Tutorial #11 - Props</h3>
+            <p>The Net Ninja
+              <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+              </svg></p>
+            <p>43.160 visualizaciones</p>
+            <p>hace 5 meses</p>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
